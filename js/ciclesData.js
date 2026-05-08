@@ -310,7 +310,7 @@ pla: [
   "</ul>",
   "</div>",
 ],
-accent: "#7d8669",
+accent: "#a0c550",
   },
 
   pfqb: {
@@ -373,6 +373,6 @@ accent: "#7d8669",
   "<li>De 15h a 21h</li>",
   "</ul>",
   "</div>",
-], accent: "#8C2B82",
+], accent: "#a82f62",
   },
 };

@@ -3,8 +3,12 @@
 body{
   margin: 0;
   font-family: "Segoe UI", system-ui, sans-serif;
-  background: radial-gradient(circle at top, #0b1d26, #08141b);
   color: #fff;
+}
+
+/* Home real (sin hash): fondo propio claro */
+body[data-home="1"]{
+  background: radial-gradient(circle at top, #246d92 0%, #54a6d2 48%, #3f8bb7 100%) !important;
 }
 /* Requisits: sin viñetas */
 .panel-section.requisits ul{
@@ -20,19 +24,15 @@ body{
 /* ===== Theme: SOLO oscurecido bajo el título + fondo uniforme accent ===== */
 html body[data-has-theme="1"]{
   background:
-    /* 1) Oscuro SOLO bajo el título (más marcado) */
     radial-gradient(72% 52% at 50% 20%,
       rgba(0,0,0,.62) 0%,
       rgba(0,0,0,.38) 42%,
       rgba(0,0,0,0) 76%),
-
-    /* 2) Fondo uniforme con el color exacto del accent */
     linear-gradient(180deg,
       var(--page-accent) 0%,
       color-mix(in srgb, var(--page-accent) 85%, #08141b) 100%) !important;
 }
 
-/* Texto oscuro para garantizar contraste sobre fondos de color */
 html body[data-has-theme="1"]{
   color: #07131a;
 }
@@ -53,8 +53,6 @@ body[data-has-theme="1"] .title-animated span{
   padding-bottom: 5rem;
 }
 
-.hero-bg{ /* reservado */ }
-
 .logo-mini{
   position: absolute;
   top: 50px;
@@ -65,6 +63,8 @@ body[data-has-theme="1"] .title-animated span{
 }
 
 .banner-content{
+  position: relative;
+  isolation: isolate;
   padding: 5rem 2rem 0;
   text-align: center;
   margin-top: 40px;
@@ -74,6 +74,7 @@ body[data-has-theme="1"] .title-animated span{
   font-size: 3.6rem;
   margin-bottom: 1rem;
   background: linear-gradient(90deg, #ffffff, #9fe7ff);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   text-shadow: 0 8px 35px rgba(0,0,0,.6);
@@ -154,7 +155,8 @@ body[data-has-theme="1"] .title-animated span{
 .dynamic-content h3{
   margin: 0 0 1.5rem;
   font-size: clamp(1.5rem, 5vw, 2rem);
-  color: #b5ecff;
+  color: #03141f;
+  text-shadow: 0 1px 0 rgba(255,255,255,.22);
 }
 
 /* Secciones internas */
@@ -167,7 +169,8 @@ body[data-has-theme="1"] .title-animated span{
 .panel-section h3{
   margin: 0 0 2rem;
   font-size: 2rem;
-  color: #b5ecff;
+  color: #03141f;
+  text-shadow: 0 1px 0 rgba(255,255,255,.22);
 }
 
 /* Listas */
@@ -188,7 +191,8 @@ body[data-has-theme="1"] .title-animated span{
 .plan-formacio h4{
   margin: 0 0 1rem;
   font-size: 1.3rem;
-  color: #7fdcff;
+  color: #072133;
+  text-shadow: 0 1px 0 rgba(255,255,255,.2);
 }
 
 /* Video panel */
@@ -212,20 +216,29 @@ body[data-has-theme="1"] .title-animated span{
    ========================================================= */
 .title-animated{
   position: relative;
+  display: inline-block;
   font-size: clamp(1.45rem, 6.2vw, 2.05rem);
   margin-bottom: 1.2rem;
   text-align: center;
-  overflow: hidden;
+  overflow: visible;
+  isolation: isolate;
 }
 
 .title-animated span{
   display: inline-block;
+  position: relative;
+  z-index: 1;
   background: linear-gradient(90deg, #ffffff, #7fdcff, #ffffff);
   background-size: 300% 100%;
+  background-clip: text;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
   animation: titleGlow 6s ease-in-out infinite;
-  text-shadow: 0 10px 35px rgba(0,0,0,.65);
+  text-shadow: none;
+  filter:
+    drop-shadow(0 2px 0 rgba(0,0,0,.62))
+    drop-shadow(0 6px 10px rgba(0,0,0,.42));
 }
 
 @keyframes titleGlow{
@@ -234,14 +247,33 @@ body[data-has-theme="1"] .title-animated span{
   100%{ background-position: 0% 50%; }
 }
 
-/* Theme: título con accent del ciclo */
+/* Theme: título igual que sin hash para mantener centro totalmente oscuro */
 body[data-has-theme="1"] .title-animated span{
-  background: linear-gradient(90deg, #ffffff, var(--page-accent), #ffffff);
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    color-mix(in srgb, var(--page-accent) 55%, #ffffff) 28%,
+    var(--page-accent) 50%,
+    color-mix(in srgb, var(--page-accent) 55%, #ffffff) 72%,
+    #ffffff 100%
+  );
+  background-size: 380% 100%;
+  background-clip: text;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
-  text-shadow:
-    0 10px 35px rgba(0,0,0,.65),
-    0 0 18px color-mix(in srgb, var(--page-accent) 45%, transparent);
+  animation: hashTitleFlow 3.8s linear infinite;
+  will-change: background-position;
+  text-shadow: 0 10px 35px rgba(0,0,0,.65);
+}
+
+@keyframes hashTitleFlow{
+  0%{ background-position: 0% 50%; }
+  100%{ background-position: 100% 50%; }
+}
+
+body[data-has-theme="1"] .title-animated span::before{
+  content: none;
 }
 
 /* =========================================================
@@ -399,26 +431,30 @@ body[data-has-theme="1"] .title-animated span{
 }
 
 /* Fondos por nivel (tarjetas) */
-#menu-cicles .level-group--basic{ background:#7d8669; }
+#menu-cicles .level-group--basic{ background:#a0c550; }
 #menu-cicles .level-group--gm{    background: #6eb7c4; }
 #menu-cicles .level-group--gs{    background: #db8e5f; }
-#menu-cicles .level-group--ce{    background: #8C2B82; }
+#menu-cicles .level-group--ce{    background: #a82f62; }
 
 /* Colores de globos por nivel (si NO hay theme) */
-#menu-cicles .level-group--basic .level-group__legend{ background: #7d8669; }
+#menu-cicles .level-group--basic .level-group__legend{ background: #a0c550; }
 #menu-cicles .level-group--gm    .level-group__legend{ background: #6eb7c4; }
 #menu-cicles .level-group--gs    .level-group__legend{ background: #db8e5f; }
-#menu-cicles .level-group--ce    .level-group__legend{ background: #8C2B82; }
+#menu-cicles .level-group--ce    .level-group__legend{ background: #a82f62; }
 
 /* =========================================================
    7) THEME PRO: recolorear menús con --page-accent
    ========================================================= */
 body[data-has-theme="1"] .highlights span,
 body[data-has-theme="1"] #menu-cicles .cicle-pill{
-  background: rgba(0,0,0,.15);
-  border: 1px solid rgba(0,0,0,.25);
-  box-shadow: 0 10px 24px rgba(0,0,0,.18);
-  color: #07131a;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--page-accent) 30%, rgba(255,255,255,.10)),
+    rgba(255,255,255,.08)
+  );
+  border: 1px solid color-mix(in srgb, var(--page-accent) 55%, rgba(255,255,255,.25));
+  box-shadow: 0 10px 24px rgba(0,0,0,.22);
+  color: #fff;
 }
 
 body[data-has-theme="1"] .highlights span:hover,
@@ -432,7 +468,7 @@ body[data-has-theme="1"] #menu-cicles .cicle-pill:hover{
 body[data-has-theme="1"] .highlights span.active{
   background: linear-gradient(
     135deg,
-    color-mix(in srgb, var(--page-accent) 92%, #07131a 0%),
+    color-mix(in srgb, var(--page-accent) 92%, #ffffff 0%),
     var(--page-accent)
   );
   color: #07131a;
@@ -450,11 +486,13 @@ body[data-has-theme="1"] #menu-cicles .level-group__legend{
 
 body[data-has-theme="1"] .dynamic-content h3,
 body[data-has-theme="1"] .panel-section h3{
-  color: color-mix(in srgb, var(--page-accent) 60%, #07131a);
+  color: #020f18;
+  text-shadow: 0 1px 0 rgba(255,255,255,.24);
 }
 /* ===== Pla: que 1r/2n curs hereden el accent del hash ===== */
 body[data-has-theme="1"] .plan-formacio h4{
-  color: color-mix(in srgb, var(--page-accent) 70%, #07131a) !important;
+  color: #031625 !important;
+  text-shadow: 0 1px 0 rgba(255,255,255,.22);
 }
 
 /* (Opcional) también tinte en la tarjeta de cada curso */
@@ -465,7 +503,7 @@ body[data-has-theme="1"] .plan-formacio .curs{
 
 /* (Opcional) bullets/links dentro del plan con un toque del accent */
 body[data-has-theme="1"] .plan-formacio li{
-  color: #07131a;
+  color: rgba(255,255,255,.92);
 }
 /* =========================================================
    8) IMÁGENES / SVG
@@ -727,18 +765,18 @@ svg{ max-width: 100%; height: auto; }
 /* ===== Links en Pla/panel con color del hash ===== */
 body[data-has-theme="1"] .dynamic-content a,
 body[data-has-theme="1"] .panel-section a{
-  color: color-mix(in srgb, var(--page-accent) 70%, #07131a);
-  text-decoration-color: color-mix(in srgb, var(--page-accent) 65%, #07131a);
+  color: color-mix(in srgb, var(--page-accent) 85%, #ffffff 15%);
+  text-decoration-color: color-mix(in srgb, var(--page-accent) 65%, transparent);
 }
 
 body[data-has-theme="1"] .dynamic-content a:visited,
 body[data-has-theme="1"] .panel-section a:visited{
-  color: color-mix(in srgb, var(--page-accent) 55%, #07131a);
+  color: color-mix(in srgb, var(--page-accent) 70%, #ffffff 30%);
 }
 
 body[data-has-theme="1"] .dynamic-content a:hover,
 body[data-has-theme="1"] .panel-section a:hover{
-  color: #07131a;
-  text-decoration-color: var(--page-accent);
+  color: #fff;
+  text-decoration-color: color-mix(in srgb, var(--page-accent) 90%, #ffffff 10%);
   text-shadow: 0 0 14px color-mix(in srgb, var(--page-accent) 55%, transparent);
 }

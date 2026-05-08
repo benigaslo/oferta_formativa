@@ -195,9 +195,11 @@ function togglePillsByHash() {
     if (cicle && ciclesData[cicle]?.accent) {
       document.body.style.setProperty("--page-accent", ciclesData[cicle].accent);
       document.body.dataset.hasTheme = "1";
+      delete document.body.dataset.home;
     } else {
       document.body.style.removeProperty("--page-accent");
       delete document.body.dataset.hasTheme; // vuelve al fondo home
+      document.body.dataset.home = "1";
     }
     // SIN HASH => mostrar lo que marque homeSection (vídeo/centre/calendari) SIN hash
     if (!cicle) {
