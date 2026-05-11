@@ -459,7 +459,7 @@ accent: "#a0c550",
 ],continu: [
   '<div class="panel-section">',
   '<h3>🚀 Continuïtat formativa</h3>',
-  "<p>Altres cursos d'especialització:</p>"
+  "<p>Altres cursos d'especialització:</p>",
   '<ul>',
   '<li>Ciberseguretat</li>',
   '<li>Desenvolupament de videojocs</li>',
