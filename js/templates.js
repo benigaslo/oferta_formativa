@@ -29,24 +29,6 @@ export const templates={
       '</div>'
     ].join(""),
 
-    continu: [
-      '<div class="panel-section">',
-      '<h3>🚀 Continuïtat formativa</h3>',
-      '<ul>',
-      '<li>Curs d’especialització en Implementació de xarxes 5G</li>',
-      '<li>Curs d’especialització en sistemes IoT</li>',
-      '<li>Accés directe a cicles superiors d’Informàtica</li>',
-      '</ul>',
-      '</div>'
-    ].join(""),
-    calendari: [
-  '<div class="panel-section">',
-  "<h3>📅 Calendari d'admissió</h3>",
-  '<div class="pdf-wrap">',
-  '  <iframe class="pdf-frame" src="assets/calendari.pdf" title="Calendari d\'admisió"></iframe>',
-  "</div>",
-  "</div>"
-].join(""),
 
     oferim: [
       '<div class="panel-section">',
