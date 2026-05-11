@@ -1,6 +1,6 @@
 export const ciclesData = {
   smx: {
-    titol: "Técnic en Sistemes Microinformàtics i Xarxes",
+    titol: "Tècnic  en Sistemes Microinformàtics i Xarxes",
     descripcio: "SMX",
     alerta:
       "Procés d'admissió: del 23/05/26 al 02/06/26<br>Matrícula telemàtica: del 24/06/26 al 02/07/26",
@@ -56,9 +56,9 @@ pla: [
   '<div class="panel-section">',
   "<h3>💼 Eixides professionals</h3>",
   "<ul>",
-  "<li>Tècnic instal·lador-reparador d'equips informàtics</li>",
-  "<li>Tècnic de suport informàtic</li>",
-  "<li>Tècnic de xarxes de dades</li>",
+  "<li>Tècnic  instal·lador-reparador d'equips informàtics</li>",
+  "<li>Tècnic  de suport informàtic</li>",
+  "<li>Tècnic  de xarxes de dades</li>",
   "<li>Reparador de perifèrics de sistemes microinformàtics</li>",
   "<li>Comercial de microinformàtica</li>",
   "<li>Operador de teleassistència</li>",
@@ -73,22 +73,23 @@ pla: [
   "<li>De 08h a 15h</li>",
   "</ul>",
   "</div>",
-],continu: [
+],
+    continu: [
   '<div class="panel-section">',
   '<h3>🚀 Continuïtat formativa</h3>',
   '<p>Accés directe als cicles formatius de grau superior:</p>',
   '<ul>',
   '<li>T.S. Administració de Sistemes Informàtics en Xarxa</li>',
-  '<li>T.S. Desenrotllament d\'Aplicacions Multiplataforma</li>',
-  '<li>T.S. Desenrotllament d\'Aplicacions Web</li>',
+  '<li>T.S. desenvolupament d\'Aplicacions Multiplataforma</li>',
+  '<li>T.S. desenvolupament d\'Aplicacions Web</li>',
   '</ul>',
   '</div>'
-]
+],
     accent: "#6eb7c4",
   },
 
   dam: {
-    titol: "Técnic Superior en Desenvolupament d'Aplicacions Multiplataforma",
+    titol: "Tècnic  Superior en Desenvolupament d'Aplicacions Multiplataforma",
     descripcio: "DAM",
     alerta:
       "Procés d'admissió: del 20/05 al 28/05<br>Matrícula telemàtica: del 20/07 al 27/07",
@@ -108,7 +109,7 @@ pla: [
   "<p>Es pot accedir amb:</p>",
   "<ul>",
   "<li>✅ Batxillerat</li>",
-  "<li>✅ Títol de Tècnic (Grau Mitjà)</li>",
+  "<li>✅ Títol de Tècnic  (Grau Mitjà)</li>",
   "<li>✅ Prova d'accés a Grau Superior</li>",
   "<li>✅ Un altre títol de Grau Superior</li>",
   "<li>✅ Titulació universitària</li>",
@@ -166,11 +167,11 @@ pla: [
   '<p>Accés directe als cicles formatius de grau superior:</p>',
   '<ul>',
   '<li>T.S. Administració de Sistemes Informàtics en Xarxa</li>',
-  '<li>T.S. Desenrotllament d\'Aplicacions Web (Amb convalidació de mòduls)</li>',
+  '<li>T.S. desenvolupament d\'Aplicacions Web (Amb convalidació de mòduls)</li>',
   '</ul>',
   '<p>Accés a graus universitaris:</p>',
   '<ul>',
-  '<li>Accedés sense fer la selectivitat específica</li>',
+  '<li>Accés sense fer la selectivitat específica</li>',
   '<li>Convalidació  d'assignatures (depèn de la universitat)</li>',
  '</ul>',
  '<p>Cursos d’especialització oficials:</p>',
@@ -195,7 +196,7 @@ pla: [
 
 
   daw: {
-    titol: "Técnic Superior en Desenvolupament d'Aplicacions Web",
+    titol: "Tècnic Superior en Desenvolupament d'Aplicacions Web",
     descripcio: "DAW",
     alerta:
       "Procés d'admissió: del 20/05 al 28/05<br>Matrícula telemàtica: del 20/07 al 27/07",
@@ -215,8 +216,8 @@ pla: [
   "<p>Es pot accedir amb:</p>",
   "<ul>",
   "<li>✅ Batxillerat</li>",
-  "<li>✅ Títol de Tècnic (Grau Mitjà)</li>",
-  "<li>✅ Prova d'accés a Grau Guperior</li>",
+  "<li>✅ Títol de Tècnic  (Grau Mitjà)</li>",
+  "<li>✅ Prova d'accés a Grau Superior</li>",
   "<li>✅ Un altre títol de Grau Superior</li>",
   "<li>✅ Titulació universitària</li>",
   "</ul>",
@@ -272,7 +273,7 @@ pla: [
   '<p>Accés directe als cicles formatius de grau superior:</p>',
   '<ul>',
   '<li>T.S. Administració de Sistemes Informàtics en Xarxa</li>',
-  '<li>T.S. Desenrotllament d\'Aplicacions Multiplataforma (Amb convalidació de mòduls)</li>',
+  '<li>T.S. desenvolupament d\'Aplicacions Multiplataforma (Amb convalidació de mòduls)</li>',
   '</ul>',
   '<p>Accés a graus universitaris:</p>',
   '<ul>',
@@ -300,7 +301,7 @@ pla: [
   },
 
   fpb: {
-    titol: "Formació Professional Bàsica.<br>Agrojardinería i Composicions Florals",
+    titol: "Formació Professional Bàsica.<br>Agrojardineria i Composicions Florals",
     descripcio: "FPB",
     alerta:
       "Procés d'admissió: del 25/05 al 02/06<br>Matrícula telemàtica: del 03/07 al 10/07",
@@ -389,7 +390,7 @@ pla: [
   '<li>T. Producció Agropecuària</li>',
   '</ul>',
   '</div>'
-]
+],
 accent: "#a0c550",
   },
 
@@ -422,12 +423,12 @@ accent: "#a0c550",
   "<h3>🔑 Requisits d'accés</h3>",
   "<p>Es pot accedir si tens algun d'aquests títols:</p>",
   "<ul>",
-  "<li>✅ Tècnic Superior en Administració de Sistemes Informàtics en Xarxa</li>",
-  "<li>✅ Tècnic Superior en Desenvolupament d'Aplicacions Multiplataforma</li>",
-  "<li>✅ Tècnic Superior en Desenvolupament d'Aplicacions Web</li>",
-  "<li>✅ Tècnic Superior en Sistemes de Telecomunicacions i Informàtics</li>",
-  "<li>✅ Títol de Tècnic Superior en Mecatrònica Industrial</li>",
-  "<li>✅ Títol de Tècnic Superior en Automatització i Robòtica Industrial</li>",
+  "<li>✅ Tècnic  Superior en Administració de Sistemes Informàtics en Xarxa</li>",
+  "<li>✅ Tècnic  Superior en Desenvolupament d'Aplicacions Multiplataforma</li>",
+  "<li>✅ Tècnic  Superior en Desenvolupament d'Aplicacions Web</li>",
+  "<li>✅ Tècnic  Superior en Sistemes de Telecomunicacions i Informàtics</li>",
+  "<li>✅ Títol de Tècnic  Superior en Mecatrònica Industrial</li>",
+  "<li>✅ Títol de Tècnic  Superior en Automatització i Robòtica Industrial</li>",
   "</ul>",
   "</div>",
 ],
