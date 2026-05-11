@@ -240,6 +240,13 @@ function togglePillsByHash() {
 
     marcarPillActivo("horari");
     }
+         else if (section === "continu") {
+  container.innerHTML = ciclesData[cicle].continu
+    ? ciclesData[cicle].continu.join("")
+    : "<p>No hi ha continuïtat formativa disponible.</p>";
+
+  marcarPillActivo("continu");
+}
          else if (section === "requisits") {
   container.innerHTML = ciclesData[cicle].requisits
     ? ciclesData[cicle].requisits.join("")
