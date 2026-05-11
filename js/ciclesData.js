@@ -278,7 +278,7 @@ pla: [
   '<p>Accés a graus universitaris:</p>',
   '<ul>',
   '<li>Accedés sense fer la selectivitat específica</li>',
-  "<li>Convalidació  d'assignatures (depèn de la universitat)</li>"
+  "<li>Convalidació  d'assignatures (depèn de la universitat)</li>",
  '</ul>',
  '<p>Cursos d’especialització oficials:</p>',
   '<ul>',
