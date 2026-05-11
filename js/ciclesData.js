@@ -3,7 +3,7 @@ export const ciclesData = {
     titol: "Tècnic  en Sistemes Microinformàtics i Xarxes",
     descripcio: "SMX",
     alerta:
-      "Procés d'admissió: del 23/05/26 al 02/06/26<br>Matrícula telemàtica: del 24/06/26 al 02/07/26",
+      "Procés d'admissió: del 20/05 al 28/05<br>Matrícula telemàtica: del 20/07 al 27/07",
 pla: [
   '<div class="panel-section">',
   "<h3>📚 Pla de formació de 2000 hores · Incloses 500 h de Formació en Empresa</h3>",
