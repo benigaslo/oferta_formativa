@@ -73,7 +73,17 @@ export const ciclesData = {
   "<li>De 08h a 15h</li>",
   "</ul>",
   "</div>",
-],
+],continu: [
+  '<div class="panel-section">',
+  '<h3>🚀 Continuïtat formativa</h3>',
+  '<p>Accés directe als cicles formatius de grau superior:</p>',
+  '<ul>',
+  '<li>T.S. Administració de Sistemes Informàtics en Xarxa</li>',
+  '<li>T.S. Desenrotllament d\'Aplicacions Multiplataforma</li>',
+  '<li>T.S. Desenrotllament d\'Aplicacions Web</li>',
+  '</ul>',
+  '</div>'
+]
     accent: "#6eb7c4",
   },
 
@@ -150,7 +160,36 @@ pla: [
   "<li>De 08h a 15h</li>",
   "</ul>",
   "</div>",
-],
+],continu: [
+  '<div class="panel-section">',
+  '<h3>🚀 Continuïtat formativa</h3>',
+  '<p>Accés directe als cicles formatius de grau superior:</p>',
+  '<ul>',
+  '<li>T.S. Administració de Sistemes Informàtics en Xarxa</li>',
+  '<li>T.S. Desenrotllament d\'Aplicacions Web (Amb convalidació de mòduls)</li>',
+  '</ul>',
+  '<p>Accés a graus universitaris:</p>',
+  '<ul>',
+  '<li>Accedés sense fer la selectivitat específica</li>',
+  '<li>Convalidació  d'assignatures (depèn de la universitat)</li>',
+ '</ul>',
+ '<p>Cursos d’especialització oficials:</p>',
+  '<ul>',
+  '<li>Ciberseguretat</li>',
+  '<li>Intel·ligència artificial i Big Data</li>',
+  '<li>Desenvolupament de videojocs</li>',
+  '<li>Cloud computing</li>',
+ '</ul>',
+
+ '<p>Certificacions professionals:</p>',
+  '<ul>',
+  '<li>AWS, Azure o Google Cloud</li>',
+  '<li>Cisco (xarxes)</li>',
+  '<li>Oracle (Java, bases de dades)</li>',
+  '<li>Microsoft (.NET, etc.)</li>',
+ '</ul>',
+  '</div>'
+]
     accent: "#db8e5f",
       },
 
@@ -306,10 +345,22 @@ pla: [
   '<div class="panel-section">',
   "<h3>Horari de matí</h3>",
   "<ul>",
-  "<li>De 08h a 15h</li>",
+  "<li>De 08h a 14h</li>",
   "</ul>",
   "</div>",
-],
+],continu: [
+  '<div class="panel-section">',
+  '<h3>🚀 Continuïtat formativa</h3>',
+  '<p>Accés directe als cicles formatius de grau mitjà:</p>',
+  '<ul>',
+  '<li>T. Activitats Eqüestres</li>',
+  '<li>T. Aprofitament i Conservació del Medi Natural</li>',
+  '<li>T. Jardineria i Floristeria</li>',
+  '<li>T. Producció Agroecològica</li>',
+  '<li>T. Producció Agropecuària</li>',
+  '</ul>',
+  '</div>'
+]
 accent: "#a0c550",
   },
 
