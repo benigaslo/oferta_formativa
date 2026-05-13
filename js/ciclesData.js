@@ -6,7 +6,8 @@ export const ciclesData = {
       "Procés d'admissió: del 20/05 al 28/05<br>Matrícula telemàtica: del 20/07 al 27/07",
 pla: [
   '<div class="panel-section">',
-  "<h3>📚 Pla de formació de 2000 hores · Incloses 500 h de Formació en Empresa</h3>",
+  "<h3>📚 Pla de formació de 2000 hores</h3>",
+  "<h4>· Incloses 500 h de Formació en Empresa</h4>",
   '<div class="plan-formacio">',
 
   '<div class="curs">',
@@ -118,7 +119,8 @@ pla: [
 ],
 pla: [
   '<div class="panel-section">',
-  "<h3>📚 Pla de formació de 2000 hores · Incloses 500 h de Formació en Empresa</h3>",
+  "<h3>📚 Pla de formació de 2000 hores</h3>",
+  "<h4>· Incloses 500 h de Formació en Empresa</h4>",
   '<div class="plan-formacio">',
 
   '<div class="curs">',
@@ -225,7 +227,8 @@ pla: [
 ],
 pla: [
   '<div class="panel-section">',
-  "<h3>📚 Pla de formació de 2000 hores · Incloses 500 h de Formació en Empresa</h3>",
+  "<h3>📚 Pla de formació de 2000 hores</h3>",
+  "<h4>· Incloses 500 h de Formació en Empresa</h4>",
   '<div class="plan-formacio">',
 
   '<div class="curs">',
@@ -337,7 +340,8 @@ pla: [
 ],
    pla: [
   '<div class="panel-section">',
-  "<h3>📚 Pla de formació (2000 hores) · Incloses 400 h de Formació en Empresa</h3>",
+  "<h3>📚 Pla de formació (2000 hores)</h3>",
+  "<h4>· Incloses 400 h de Formació en Empresa</h4>",
   '<div class="plan-formacio">',
 
   '<div class="curs">',
@@ -434,7 +438,8 @@ accent: "#a0c550",
 ],
    pla: [
   '<div class="panel-section">',
-  "<h3>📚 Pla de formació de 600 hores ·Possibilitat de fer formació en empresa</h3>",
+  "<h3>📚 Pla de formació de 600 hores</h3>",
+  "<h4>Possibilitat de fer formació en empresa</h4>",
   '<div class="plan-formacio">',
   '<div class="curs">',
   "<h4>MÒDULS</h4>",
