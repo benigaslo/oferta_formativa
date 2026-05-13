@@ -1,3 +1,4 @@
+/* ...restaurar contenido original del repo... */
 * { box-sizing: border-box; }
 
 body{
@@ -23,14 +24,7 @@ body[data-home="1"]{
    ========================================================= */
 /* ===== Theme: SOLO oscurecido bajo el título + fondo uniforme accent ===== */
 html body[data-has-theme="1"]{
-  background:
-    radial-gradient(72% 52% at 50% 20%,
-      rgba(0,0,0,.62) 0%,
-      rgba(0,0,0,.38) 42%,
-      rgba(0,0,0,0) 76%),
-    linear-gradient(180deg,
-      var(--page-accent) 0%,
-      color-mix(in srgb, var(--page-accent) 85%, #08141b) 100%) !important;
+  background: var(--page-accent) !important;
 }
 
 html body[data-has-theme="1"]{
@@ -77,8 +71,23 @@ body[data-has-theme="1"] .title-animated span{
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  text-shadow: 0 8px 35px rgba(0,0,0,.6);
+  position: relative;
+  z-index: 1;
 }
+
+@media (max-width: 600px) {
+  .banner-content h1::after {
+    display: none !important;
+  }
+  .banner-content h1 {
+    text-shadow:
+      0 2px 6px rgba(0,0,0,0.32),
+      0 4px 12px rgba(0,0,0,0.18);
+  }
+}
+
+/* Sombra limitada solo debajo del título */
+
 
 .subtitle{
   font-size: 1.25rem;
@@ -93,6 +102,7 @@ body[data-has-theme="1"] .title-animated span{
    ========================================================= */
 .highlights{
   margin-top: 3rem;
+  margin-bottom: 1.5rem;
   display: flex;
   justify-content: center;
   gap: 1.2rem;
@@ -466,14 +476,12 @@ body[data-has-theme="1"] #menu-cicles .cicle-pill:hover{
 }
 
 body[data-has-theme="1"] .highlights span.active{
-  background: linear-gradient(
-    135deg,
-    color-mix(in srgb, var(--page-accent) 92%, #ffffff 0%),
-    var(--page-accent)
-  );
-  color: #07131a;
-  border-color: color-mix(in srgb, var(--page-accent) 70%, rgba(255,255,255,.35));
-  box-shadow: 0 10px 30px color-mix(in srgb, var(--page-accent) 45%, transparent);
+  background: linear-gradient(135deg, #fffbe6 60%, var(--page-accent) 120%);
+  color: #1a2a3a;
+  border: 2.5px solid #ffe066;
+  box-shadow: 0 0 0 3px #ffe06655, 0 10px 30px color-mix(in srgb, var(--page-accent) 45%, transparent);
+  filter: brightness(1.08) saturate(1.2);
+  z-index: 2;
 }
 
 body[data-has-theme="1"] #menu-cicles .level-group__legend{
@@ -790,3 +798,13 @@ body[data-has-theme="1"] .panel-section a:hover{
   color: #e1306c !important; /* O el color que uses al resaltar */
 }
 
+@media (max-width: 600px) {
+  /* Quita la sombra de los contenedores en móvil */
+  .panel-section,
+  .plan-formacio .curs  .panel-section h3,
+  .plan-formacio .curs h3{
+    box-shadow: none !important;
+  }
+}
+
+  
