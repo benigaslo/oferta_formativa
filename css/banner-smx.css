@@ -789,3 +789,10 @@ body[data-has-theme="1"] .panel-section a:hover{
 .fitxa-oficial-link:hover {
   color: #e1306c !important; /* O el color que uses al resaltar */
 }
+
+@media (max-width: 600px) {
+  .panel-section,
+  .plan-formacio .curs {
+    box-shadow: 0 6px 14px rgba(0,0,0,0.14) !important;
+  }
+}
