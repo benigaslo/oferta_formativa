@@ -37,7 +37,7 @@ pla: [
   "</div>",
 
   "</div>",
-  '<p class="muted" style="margin-top:10px;">Font: Fitxa oficial GVA (CEICE) · <a href="https://ceice.gva.es/va/web/formacion-profesional/publicador-de-cicles/-/asset_publisher/M0SqOt5YOf05/content/ciclo-formativo-sistemas-microinformatico-y-redes" target="_blank">Veure fitxa</a></p>',
+  '<p class="muted" style="margin-top:10px;">Font: Fitxa oficial GVA (CEICE) · <a href="https://ceice.gva.es/va/web/formacion-profesional/publicador-de-cicles/-/asset_publisher/M0SqOt5YOf05/content/ciclo-formativo-sistemas-microinformatico-y-redes" target="_blank" class="fitxa-oficial-link">Veure fitxa</a></p>',
   "</div>",
 ],
 
@@ -152,7 +152,7 @@ pla: [
   "</div>",
 
   "</div>",
-  '<p class="muted" style="margin-top:10px;">Font: GVA (CEICE) · <a href="https://ceice.gva.es/es/web/formacion-profesional/publicador-de-cicles/-/asset_publisher/M0SqOt5YOf05/content/ciclo-formativo-desarrollo-de-aplicaciones-multiplataforma" target="_blank" rel="noopener noreferrer">Fitxa oficial</a></p>',
+  '<p class="muted" style="margin-top:10px;">Font: GVA (CEICE) · <a href="https://ceice.gva.es/es/web/formacion-profesional/publicador-de-cicles/-/asset_publisher/M0SqOt5YOf05/content/ciclo-formativo-desarrollo-de-aplicaciones-multiplataforma" target="_blank" rel="noopener noreferrer" class="fitxa-oficial-link">Fitxa oficial</a></p>',
   "</div>",
 ], horari: [
   '<div class="panel-section">',
@@ -258,7 +258,7 @@ pla: [
   "</div>",
 
   "</div>",
-  '<p class="muted" style="margin-top:10px;">Font: GVA (CEICE) · <a href="https://ceice.gva.es/es/web/formacion-profesional/publicador-de-cicles/-/asset_publisher/M0SqOt5YOf05/content/ciclo-formativo-desarrollo-de-aplicaciones-web" target="_blank" rel="noopener noreferrer">Fitxa oficial</a></p>',
+  '<p class="muted" style="margin-top:10px;">Font: GVA (CEICE) · <a href="https://ceice.gva.es/es/web/formacion-profesional/publicador-de-cicles/-/asset_publisher/M0SqOt5YOf05/content/ciclo-formativo-desarrollo-de-aplicaciones-web" target="_blank" rel="noopener noreferrer" class="fitxa-oficial-link">Fitxa oficial</a></p>',
   "</div>",
 ], horari: [
   '<div class="panel-section">',
@@ -369,7 +369,7 @@ pla: [
   "</div>",
 
   "</div>",
-  '<p class="muted" style="margin-top:10px;">Font: GVA (CEICE) · <a href="https://ceice.gva.es/es/web/formacion-profesional/publicador-de-cicles/-/asset_publisher/M0SqOt5YOf05/content/formacion-profesional-basica-agrojardineria-y-composiciones-florales" target="_blank" rel="noopener noreferrer">Fitxa oficial</a></p>',
+  '<p class="muted" style="margin-top:10px;">Font: GVA (CEICE) · <a href="https://ceice.gva.es/es/web/formacion-profesional/publicador-de-cicles/-/asset_publisher/M0SqOt5YOf05/content/formacion-profesional-basica-agrojardineria-y-composiciones-florales" target="_blank" rel="noopener noreferrer" class="fitxa-oficial-link">Fitxa oficial</a></p>',
   "</div>",
 ], horari: [
   '<div class="panel-section">',
@@ -447,7 +447,7 @@ accent: "#a0c550",
   "</ul>",
   "</div>",
   "</div>",
-  '<p class="muted" style="margin-top:10px;">Font: GVA (CEICE) · <a href="https://ceice.gva.es/es/web/formacion-profesional/publicador-de-cursos-especialitzacio/-/asset_publisher/MRg14dkTb9DQ/content/inteligencia-artificial-y-big-data" target="_blank" rel="noopener noreferrer">Fitxa oficial</a></p>',
+  '<p class="muted" style="margin-top:10px;">Font: GVA (CEICE) · <a href="https://ceice.gva.es/es/web/formacion-profesional/publicador-de-cursos-especialitzacio/-/asset_publisher/MRg14dkTb9DQ/content/inteligencia-artificial-y-big-data" target="_blank" rel="noopener noreferrer" class="fitxa-oficial-link">Fitxa oficial</a></p>',
   "</div>",
 ], horari: [
   '<div class="panel-section">',
