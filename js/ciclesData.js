@@ -439,7 +439,7 @@ accent: "#a0c550",
    pla: [
   '<div class="panel-section">',
   "<h3>📚 Pla de formació de 600 hores</h3>",
-  "<h4>Possibilitat de fer formació en empresa</h4>",
+  "<h4>· Possibilitat de fer formació en empresa</h4>",
   '<div class="plan-formacio">',
   '<div class="curs">',
   "<h4>MÒDULS</h4>",
