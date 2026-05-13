@@ -780,3 +780,12 @@ body[data-has-theme="1"] .panel-section a:hover{
   text-decoration-color: color-mix(in srgb, var(--page-accent) 90%, #ffffff 10%);
   text-shadow: 0 0 14px color-mix(in srgb, var(--page-accent) 55%, transparent);
 }
+.fitxa-oficial-link {
+  color: #fff !important; /* blanco puro */
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color .2s;
+}
+.fitxa-oficial-link:hover {
+  color: #e1306c !important; /* O el color que uses al resaltar */
+}
