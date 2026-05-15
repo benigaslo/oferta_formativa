@@ -479,6 +479,6 @@ accent: "#a0c550",
   '<li>TensorFlow o especialitzacions en Python</li>',
  '</ul>',
   '</div>'
-], accent: "#a82f62",
+], accent: "#ae19d8",
   },
 };

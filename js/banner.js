@@ -113,7 +113,7 @@ function renderMenuCicles() {
   menuCicles.querySelectorAll("[data-cicle]").forEach((el) => {
     el.addEventListener("click", () => {
       const cicle = el.dataset.cicle;          //
-      window.location.hash = `/${cicle}/pla`;  // entrar siempre a PLA
+      window.location.hash = `/${cicle}/opinions`;  // entrar siempre a PLA
     });
   });
 }
@@ -240,6 +240,20 @@ function togglePillsByHash() {
 
     marcarPillActivo("horari");
     }
+    else if (section === "opinions") {
+  container.innerHTML = `
+    <div class="panel-section">
+      <h3>🎬 Opinions de l'alumnat</h3>
+      <div class="video-panel-wrap">
+        <video class="video-panel" controls playsinline preload="metadata">
+          <source src="./assets/videos/${cicle}.mp4" type="video/mp4" />
+          El teu navegador no soporta video HTML5.
+        </video>
+      </div>
+    </div>
+  `;
+  marcarPillActivo("opinions");
+}
          else if (section === "continu") {
   container.innerHTML = ciclesData[cicle].continu
     ? ciclesData[cicle].continu.join("")

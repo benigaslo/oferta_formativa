@@ -443,13 +443,13 @@ body[data-has-theme="1"] .title-animated span::before{
 #menu-cicles .level-group--basic{ background:#a0c550; }
 #menu-cicles .level-group--gm{    background: #6eb7c4; }
 #menu-cicles .level-group--gs{    background: #db8e5f; }
-#menu-cicles .level-group--ce{    background: #a82f62; }
+#menu-cicles .level-group--ce{    background: #ae19d8; }
 
 /* Colores de globos por nivel (si NO hay theme) */
 #menu-cicles .level-group--basic .level-group__legend{ background: #a0c550; }
 #menu-cicles .level-group--gm    .level-group__legend{ background: #6eb7c4; }
 #menu-cicles .level-group--gs    .level-group__legend{ background: #db8e5f; }
-#menu-cicles .level-group--ce    .level-group__legend{ background: #a82f62; }
+#menu-cicles .level-group--ce    .level-group__legend{ background: #ae19d8; }
 
 /* =========================================================
    7) THEME PRO: recolorear menús con --page-accent
